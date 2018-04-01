@@ -1,8 +1,9 @@
-import { PlayersService } from './service/players.service';
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AppError } from '../../app/common/app-error';
 import { NotFoundError } from '../../app/common/not-found-error';
+import { PlayersService } from '../../app/common/service/players.service';
 
 /**
  * Generated class for the PlayersPage page.

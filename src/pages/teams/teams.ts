@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { TeamsService } from './service/teams.service';
+import { TeamsService } from '../../app/common/service/teams.service';
 import { EndPoint } from '../../app/common/endpoints';
 import { NotFoundError } from '../../app/common/not-found-error';
 import { AppError } from '../../app/common/app-error';
@@ -35,6 +35,7 @@ export class TeamsPage {
 
     this.service.getItems(EndPoint.TEAMS_EPL_1718).subscribe(
       response => {
+        console.log(response);
         this.teams = response.teams;
       },
       (error: AppError) => {

@@ -1,4 +1,4 @@
-import { PlayersService } from './../pages/players/service/players.service';
+
 import { TeamsPage } from './../pages/teams/teams';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -7,9 +7,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { TeamsService } from '../pages/teams/service/teams.service';
 import { HttpModule } from '@angular/http';
 import { PlayersPage } from '../pages/players/players';
+import { TeamsService } from './common/service/teams.service';
+import { PlayersService } from './common/service/players.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { PlayersPage } from '../pages/players/players';
     PlayersPage
   ],
   imports: [
-  
+
     HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
@@ -35,7 +36,7 @@ import { PlayersPage } from '../pages/players/players';
     PlayersService,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
