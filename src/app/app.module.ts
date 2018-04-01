@@ -1,3 +1,4 @@
+import { FixturesPage } from './../pages/fixtures/fixtures';
 
 import { TeamsPage } from './../pages/teams/teams';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,13 +12,15 @@ import { HttpModule } from '@angular/http';
 import { PlayersPage } from '../pages/players/players';
 import { TeamsService } from './common/service/teams.service';
 import { PlayersService } from './common/service/players.service';
+import { FixturesService } from './common/service/fixtures.service';
 
 
 @NgModule({
   declarations: [
     MyApp,
     TeamsPage,
-    PlayersPage
+    PlayersPage,
+    FixturesPage
   ],
   imports: [
 
@@ -29,9 +32,11 @@ import { PlayersService } from './common/service/players.service';
   entryComponents: [
     MyApp,
     TeamsPage,
-    PlayersPage
+    PlayersPage,
+    FixturesPage
   ],
   providers: [
+    FixturesService,
     TeamsService,
     PlayersService,
     StatusBar,
