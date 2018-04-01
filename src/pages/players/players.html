@@ -1,0 +1,29 @@
+<!--
+  Generated template for the PlayersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{teamName}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor = "let player of players ">
+  
+      <h2>{{player.name}}</h2>
+      <h3>{{player.position}}</h3>
+      <p>{{player.nationality}}</p>
+      <p>{{player.jerseyNumber}}</p>
+      <p>{{player.contractUntil}}</p>
+      <p>{{player.dateOfBirth}}</p>
+      
+    </ion-item>
+  </ion-list>
+</ion-content>
