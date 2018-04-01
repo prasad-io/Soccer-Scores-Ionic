@@ -1,3 +1,5 @@
+import { StandingsService } from './common/service/standings.service';
+import { StandingsPage } from './../pages/standings/standings';
 import { FixturesPage } from './../pages/fixtures/fixtures';
 
 import { TeamsPage } from './../pages/teams/teams';
@@ -20,7 +22,8 @@ import { FixturesService } from './common/service/fixtures.service';
     MyApp,
     TeamsPage,
     PlayersPage,
-    FixturesPage
+    FixturesPage,
+    StandingsPage
   ],
   imports: [
 
@@ -33,9 +36,11 @@ import { FixturesService } from './common/service/fixtures.service';
     MyApp,
     TeamsPage,
     PlayersPage,
-    FixturesPage
+    FixturesPage,
+    StandingsPage
   ],
   providers: [
+    StandingsService,
     FixturesService,
     TeamsService,
     PlayersService,

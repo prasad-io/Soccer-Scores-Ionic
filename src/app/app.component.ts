@@ -1,3 +1,4 @@
+import { StandingsPage } from './../pages/standings/standings';
 import { FixturesPage } from './../pages/fixtures/fixtures';
 import { TeamsPage } from './../pages/teams/teams';
 import { Component } from '@angular/core';
@@ -10,7 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = FixturesPage;
+  rootPage:any = StandingsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

@@ -1,0 +1,28 @@
+<!--
+  Generated template for the StandingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Standings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+    <ion-list>
+        <ion-item ion-item *ngFor="let standing of standings">
+          
+          <h2>{{standing.position}} - {{ standing.teamName }} </h2>
+
+          <button ion-button clear item-end (click)="viewPlayers(team)">View</button>
+        </ion-item>
+      </ion-list> 
+
+</ion-content>
