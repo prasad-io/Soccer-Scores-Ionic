@@ -50,4 +50,17 @@ export class FixturesPage {
 
   }
 
+  gameOver(status:string) {
+    
+    switch(status){
+      case "FINISHED": return true;
+      
+      case "IN_PLAY" : return true;
+
+      default : return false;
+  
+    }
+
+  }
+
 }

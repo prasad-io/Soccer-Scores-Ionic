@@ -20,11 +20,11 @@
           
           <h2>{{ fixture.homeTeamName }} vs {{fixture.awayTeamName}}</h2>
 
-          <ion-icon name="football"></ion-icon>   {{ fixture.result.goalsHomeTeam }} - {{fixture.result.goalsAwayTeam}} 
-          <div *ngIf="fixture.status">
+          <div *ngIf="gameOver(fixture.status)">
 
             <ion-icon name="football"></ion-icon>   {{ fixture.result.goalsHomeTeam }} - {{fixture.result.goalsAwayTeam}} 
 
+            <p *ngIf="fixture.status==='IN_PLAY'"> In progress</p>
           </div>
           
           <p>{{fixture.date | date }}</p>
