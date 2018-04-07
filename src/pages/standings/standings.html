@@ -16,13 +16,20 @@
 <ion-content padding>
 
 
-    <ion-list>
-        <ion-item ion-item *ngFor="let standing of standings">
-          
-          <h2>{{standing.position}} - {{ standing.teamName }} </h2>
+  <ion-list>
+    <ion-item ion-item *ngFor="let standing of standings">
+      <ion-avatar item-start>
+        <img src={{standing.crestURI}}>
+      </ion-avatar>
 
-          <button ion-button clear item-end (click)="viewPlayers(team)">View</button>
-        </ion-item>
-      </ion-list> 
+      <h2>{{ standing.teamName }} </h2>
+
+      <button ion-button clear item-end (click)="viewPlayers(standing)">View</button>
+      <h2>{{standing.points}} points | {{standing.playedGames}} games</h2>
+      <h3>{{standing.wins}} wins | {{standing.draws}} draws | {{standing.losses}} losses </h3>
+      <h3>{{standing.goals}} goals</h3>
+      
+    </ion-item>
+  </ion-list>
 
 </ion-content>

@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Fixtures</ion-title>
+    <ion-title>Fixtures & Results </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -20,11 +20,15 @@
           
           <h2>{{ fixture.homeTeamName }} vs {{fixture.awayTeamName}}</h2>
 
-          <p>{{ fixture.result.goalsHomeTeam }} - {{fixture.result.goalsAwayTeam}}</p>
+          <ion-icon name="football"></ion-icon>   {{ fixture.result.goalsHomeTeam }} - {{fixture.result.goalsAwayTeam}} 
+          <div *ngIf="fixture.status">
 
-          <p>{{fixture.date || date }}</p>
+            <ion-icon name="football"></ion-icon>   {{ fixture.result.goalsHomeTeam }} - {{fixture.result.goalsAwayTeam}} 
 
-          <button ion-button clear item-end (click)="viewPlayers(team)">View</button>
+          </div>
+          
+          <p>{{fixture.date | date }}</p>
+
         </ion-item>
       </ion-list>
     

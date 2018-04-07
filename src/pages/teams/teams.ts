@@ -50,8 +50,8 @@ export class TeamsPage {
 
   viewPlayers(team : any){
 
-    console.log("viewPlayers clicked");
-    this.navCtrl.push(PlayersPage,team);
+    var fetchPlayersUrl = team._links.players.href;
+    this.navCtrl.push(PlayersPage,{teamUrl:fetchPlayersUrl,teamName:team.name});
   }
   
 

@@ -17,7 +17,11 @@
   <ion-list>
     <ion-item *ngFor = "let player of players ">
   
-      <h2>{{player.name}}</h2>
+      <ion-avatar item-start>
+        <ion-text-avatar color="primary">{{player.jerseyNumber}}</ion-text-avatar>
+      </ion-avatar>
+
+      <h1>{{player.name}}</h1>
       <h3>{{player.position}}</h3>
       <p>{{player.nationality}}</p>
       <p>{{player.jerseyNumber}}</p>

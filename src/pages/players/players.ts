@@ -24,22 +24,11 @@ export class PlayersPage {
   teamName : string;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, private service: PlayersService) {
-  
-    // this.route.paramMap.subscribe(params=>{
-    //   // console.log(params);
-    //    this.teamurl = params.get('teamid');
-    //    this.teamName = params.get('teamname');
      
-    var lprams = navParams.get('_links');
-    var lp2 = lprams.players.href;
-    console.log(lprams);
-    console.log(lp2);
-    console.log(navParams.get('_links'));
-    console.log(navParams.get('name'));
-    this.teamurl = navParams.get('_links').players.href;
-    this.teamName = navParams.get('name');
-  
-      }
+    this.teamurl = navParams.get('teamUrl');
+    this.teamName = navParams.get('teamName');
+
+    }
 
   ionViewDidLoad() {
     this.displayTeamsList();

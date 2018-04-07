@@ -1,3 +1,4 @@
+import { HomePage } from './../pages/home/home';
 import { StandingsService } from './common/service/standings.service';
 import { StandingsPage } from './../pages/standings/standings';
 import { FixturesPage } from './../pages/fixtures/fixtures';
@@ -15,15 +16,16 @@ import { PlayersPage } from '../pages/players/players';
 import { TeamsService } from './common/service/teams.service';
 import { PlayersService } from './common/service/players.service';
 import { FixturesService } from './common/service/fixtures.service';
-
+import { IonTextAvatar } from 'ionic-text-avatar';
 
 @NgModule({
   declarations: [
     MyApp,
+    HomePage,
     TeamsPage,
     PlayersPage,
-    FixturesPage,
-    StandingsPage
+    IonTextAvatar
+    
   ],
   imports: [
 
@@ -34,10 +36,10 @@ import { FixturesService } from './common/service/fixtures.service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    HomePage,
     TeamsPage,
     PlayersPage,
-    FixturesPage,
-    StandingsPage
+    
   ],
   providers: [
     StandingsService,
