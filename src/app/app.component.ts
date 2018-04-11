@@ -1,6 +1,3 @@
-import { StandingsPage } from './../pages/standings/standings';
-import { FixturesPage } from './../pages/fixtures/fixtures';
-import { TeamsPage } from './../pages/teams/teams';
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';

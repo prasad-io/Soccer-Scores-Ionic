@@ -1,8 +1,6 @@
 
-import { Http, Headers, RequestOptions } from '@angular/http';
+import { Http, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
-import { HttpHeaders } from '@angular/common/http';
-
 import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/operator/catch';
