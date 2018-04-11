@@ -1,4 +1,3 @@
-import { HomePage } from './../pages/home/home';
 
 import { StandingsService } from './common/service/standings.service';
 
@@ -19,12 +18,8 @@ import { FixturesService } from './common/service/fixtures.service';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    
-    
   ],
   imports: [
-
     HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
@@ -32,9 +27,6 @@ import { FixturesService } from './common/service/fixtures.service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    
-     
   ],
   providers: [
     StandingsService,
