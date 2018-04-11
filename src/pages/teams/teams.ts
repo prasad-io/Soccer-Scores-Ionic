@@ -4,7 +4,7 @@ import { TeamsService } from '../../app/common/service/teams.service';
 import { EndPoint } from '../../app/common/endpoints';
 import { NotFoundError } from '../../app/common/not-found-error';
 import { AppError } from '../../app/common/app-error';
-import { PlayersPage } from '../players/players';
+
 
 /**
  * Generated class for the TeamsPage page.
@@ -51,7 +51,7 @@ export class TeamsPage {
   viewPlayers(team : any){
 
     var fetchPlayersUrl = team._links.players.href;
-    this.navCtrl.push(PlayersPage,{teamUrl:fetchPlayersUrl,teamName:team.name});
+    this.navCtrl.push('PlayersPage',{teamUrl:fetchPlayersUrl,teamName:team.name});
   }
   
 

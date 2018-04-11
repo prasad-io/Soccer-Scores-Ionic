@@ -1,9 +1,7 @@
 import { HomePage } from './../pages/home/home';
-import { StandingsService } from './common/service/standings.service';
-import { StandingsPage } from './../pages/standings/standings';
-import { FixturesPage } from './../pages/fixtures/fixtures';
 
-import { TeamsPage } from './../pages/teams/teams';
+import { StandingsService } from './common/service/standings.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -12,18 +10,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
-import { PlayersPage } from '../pages/players/players';
 import { TeamsService } from './common/service/teams.service';
 import { PlayersService } from './common/service/players.service';
 import { FixturesService } from './common/service/fixtures.service';
+
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    TeamsPage,
-    PlayersPage,
     
     
   ],
@@ -37,9 +33,8 @@ import { FixturesService } from './common/service/fixtures.service';
   entryComponents: [
     MyApp,
     HomePage,
-    TeamsPage,
-    PlayersPage,
     
+     
   ],
   providers: [
     StandingsService,

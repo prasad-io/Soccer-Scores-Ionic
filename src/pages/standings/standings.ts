@@ -4,7 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NotFoundError } from '../../app/common/not-found-error';
 import { AppError } from '../../app/common/app-error';
 import { StandingsService } from '../../app/common/service/standings.service';
-import { PlayersPage } from '../players/players';
+
 
 /**
  * Generated class for the StandingsPage page.
@@ -53,7 +53,7 @@ export class StandingsPage {
   viewPlayers(team : any){
 
     var fetchPlayersUrl = team._links.team.href + "/players";
-    this.navCtrl.push(PlayersPage,{teamUrl:fetchPlayersUrl,teamName:team.teamName});
+    this.navCtrl.push('PlayersPage',{teamUrl:fetchPlayersUrl,teamName:team.teamName});
   }
   
 }
