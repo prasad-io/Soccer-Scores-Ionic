@@ -16,7 +16,7 @@ import { PlayersPage } from '../pages/players/players';
 import { TeamsService } from './common/service/teams.service';
 import { PlayersService } from './common/service/players.service';
 import { FixturesService } from './common/service/fixtures.service';
-import { IonTextAvatar } from 'ionic-text-avatar';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { IonTextAvatar } from 'ionic-text-avatar';
     HomePage,
     TeamsPage,
     PlayersPage,
-    IonTextAvatar
+    
     
   ],
   imports: [
