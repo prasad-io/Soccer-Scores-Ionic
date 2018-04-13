@@ -19,27 +19,33 @@ import { PlayersService } from '../../app/common/service/players.service';
 })
 export class PlayersPage {
 
-  players : any[];
-  teamurl : string;
-  teamName : string;
-  
+  players: any[];
+  teamurl: string;
+  teamName: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private service: PlayersService) {
-     
+
     this.teamurl = navParams.get('teamUrl');
     this.teamName = navParams.get('teamName');
 
-    }
+  }
 
   ionViewDidLoad() {
     this.displayTeamsList();
     console.log('ionViewDidLoad PlayersPage');
   }
 
- 
+  toHttps(val: string) {
+    if (!val.includes("https")) {
+      val = val.replace("http", "https");
+    }
+    console.log(val);
+    return val;
+  }
 
   displayTeamsList(): void {
-  //console.log(this.teamurl);
-    this.service.getItems(this.teamurl).subscribe(
+    //console.log(this.teamurl);
+    this.service.getItems(this.toHttps(this.teamurl)).subscribe(
       response => {
         this.players = response.players;
       },
