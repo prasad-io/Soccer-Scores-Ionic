@@ -1,7 +1,7 @@
 # Soccer Scores
 Ionic App - The goal of this  app is to demo different ionic components in a nice working app. 
 
-Live view - https://anhsirkdasarp.github.io/Soccer-Scores-Ionic/www
+**Live view : [https://anhsirkdasarp.github.io/Soccer-Scores-Ionic/www](https://anhsirkdasarp.github.io/Soccer-Scores-Ionic/www ).**
 
 ## Prerequisites
 - Download nodejs from https://nodejs.org/en/download/current/ It will install `node` and `npm`
