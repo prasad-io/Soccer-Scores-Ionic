@@ -1,7 +1,7 @@
+import { AppError } from './../../app/common/app-error';
 
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AppError } from '../../app/common/app-error';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { NotFoundError } from '../../app/common/not-found-error';
 import { PlayersService } from '../../app/common/service/players.service';
 
@@ -22,8 +22,9 @@ export class PlayersPage {
   players: any[];
   teamurl: string;
   teamName: string;
+  loader : any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private service: PlayersService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private service: PlayersService , public loadingCtrl : LoadingController) {
 
     this.teamurl = navParams.get('teamUrl');
     this.teamName = navParams.get('teamName');
@@ -31,8 +32,16 @@ export class PlayersPage {
   }
 
   ionViewDidLoad() {
-    this.displayTeamsList();
-    console.log('ionViewDidLoad PlayersPage');
+
+     this.loader = this.loadingCtrl.create(
+      {content:'Loading players...',
+      spinner : 'dots'
+    })
+
+    this.loader.present().then(() => {
+      this.displayTeamsList();
+    })
+
   }
 
   toHttps(val: string) {
@@ -48,12 +57,16 @@ export class PlayersPage {
     this.service.getItems(this.toHttps(this.teamurl)).subscribe(
       response => {
         this.players = response.players;
+        this.loader.dismiss();
       },
       (error: AppError) => {
         if (error instanceof NotFoundError) {
           console.log('not found ');
         }
-        else throw error;
+        else {
+          throw error;
+        }
+        this.loader.dismiss();
       }
     )
 
