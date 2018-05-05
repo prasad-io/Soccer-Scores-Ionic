@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { AppError } from '../../app/common/app-error';
 import { NotFoundError } from '../../app/common/not-found-error';
+import moment from 'moment';
+import * as _ from 'lodash';
 
 /**
  * Generated class for the FixturesPage page.
@@ -21,8 +23,10 @@ export class FixturesPage {
 
   
 
-
+public dateFilter: string;
+public useDateTimeFilter = true;
   fixtures : any[];
+  allGames : any[];
   loader : any;
  
   
@@ -53,6 +57,8 @@ export class FixturesPage {
     this.service.getItems(EndPoint.FIXTURES_EPL_1718).subscribe(
       response => {
         this.fixtures = response.fixtures;
+        this.allGames = response.fixtures;
+        this.dateChanged();
         this.loader.dismiss();
       },
       (error: AppError) => {
@@ -77,6 +83,21 @@ export class FixturesPage {
   
     }
 
+  }
+
+  getScoreWinOrLoss(game){
+
+    //check the scores and display..
+    // return game.scoreDisplay ? game.scoreDisplay[0] : ''
+  }
+
+  dateChanged(){
+
+    if(this.useDateTimeFilter){
+      this.fixtures = _.filter(this.allGames , g=> moment(g.date).isSame(this.dateFilter,'week'));
+    }else{
+      this.fixtures = this.allGames;
+    }
   }
 
 }

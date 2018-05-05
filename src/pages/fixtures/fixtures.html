@@ -15,6 +15,12 @@
 
 <ion-content padding>
 
+  <ion-item>
+    <ion-label>This week : </ion-label>
+    <ion-toggle [(ngModel)]="useDateTimeFilter" (ionChange)="dateChanged()" ></ion-toggle>
+    <ion-datetime displayFormat="D/M/YYYY" pickerFormat="D/M/YYYY" [(ngModel)]="dateFilter"  (ionChange)="dateChanged()" [(disabled)]="!useDateTimeFilter" ></ion-datetime>
+  </ion-item>
+
     <ion-list>
         <ion-item ion-item *ngFor="let fixture of fixtures">
           
@@ -22,7 +28,8 @@
 
           <div *ngIf="gameOver(fixture.status)">
 
-            <ion-icon name="football"></ion-icon>   {{ fixture.result.goalsHomeTeam }} - {{fixture.result.goalsAwayTeam}} 
+            <ion-icon name="football"></ion-icon>  
+            <ion-badge> {{ fixture.result.goalsHomeTeam }} - {{fixture.result.goalsAwayTeam}} </ion-badge>
 
             <p *ngIf="fixture.status==='IN_PLAY'"> In progress</p>
           </div>
