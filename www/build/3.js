@@ -1,1 +1,124 @@
-webpackJsonp([3],{640:function(l,n,u){"use strict";function t(l){return o._22(0,[(l()(),o.Z(0,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,k.b,k.a)),o.Y(1,1097728,null,3,v.a,[Z.a,y.a,o.j,o.z,[2,j.a]],null,null),o._18(335544320,1,{contentLabel:0}),o._18(603979776,2,{_buttons:1}),o._18(603979776,3,{_icons:1}),o.Y(5,16384,null,0,C.a,[],null,null),(l()(),o._20(-1,2,["\n  \n      "])),(l()(),o._20(-1,2,["\n\n      "])),(l()(),o.Z(8,0,null,2,1,"h1",[],null,null,null,null,null)),(l()(),o._20(9,null,["",""])),(l()(),o._20(-1,2,["\n      "])),(l()(),o.Z(11,0,null,2,1,"h3",[],null,null,null,null,null)),(l()(),o._20(12,null,["",""])),(l()(),o._20(-1,2,["\n      "])),(l()(),o.Z(14,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),o._20(15,null,["",""])),(l()(),o._20(-1,2,["\n      "])),(l()(),o.Z(17,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),o._20(18,null,["",""])),(l()(),o._20(-1,2,["\n      "])),(l()(),o.Z(20,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),o._20(21,null,["",""])),(l()(),o._20(-1,2,["\n      "])),(l()(),o.Z(23,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),o._20(24,null,["",""])),(l()(),o._20(-1,2,["\n      \n    "]))],null,function(l,n){l(n,9,0,n.context.$implicit.name);l(n,12,0,n.context.$implicit.position);l(n,15,0,n.context.$implicit.nationality);l(n,18,0,n.context.$implicit.jerseyNumber);l(n,21,0,n.context.$implicit.contractUntil);l(n,24,0,n.context.$implicit.dateOfBirth)})}function a(l){return o._22(0,[(l()(),o._20(-1,null,["\n"])),(l()(),o.Z(1,0,null,null,10,"ion-header",[],null,null,null,null,null)),o.Y(2,16384,null,0,Y.a,[y.a,o.j,o.z,[2,x.a]],null,null),(l()(),o._20(-1,null,["\n\n  "])),(l()(),o.Z(4,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,z.b,z.a)),o.Y(5,49152,null,0,P.a,[q.a,[2,x.a],[2,A.a],y.a,o.j,o.z],null,null),(l()(),o._20(-1,3,["\n    "])),(l()(),o.Z(7,0,null,3,2,"ion-title",[],null,null,null,$.b,$.a)),o.Y(8,49152,null,0,L.a,[y.a,o.j,o.z,[2,N.a],[2,P.a]],null,null),(l()(),o._20(9,0,["",""])),(l()(),o._20(-1,3,["\n  "])),(l()(),o._20(-1,null,["\n\n"])),(l()(),o._20(-1,null,["\n\n\n"])),(l()(),o.Z(13,0,null,null,9,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,w.b,w.a)),o.Y(14,4374528,null,0,F.a,[y.a,O.a,X.a,o.j,o.z,q.a,B.a,o.u,[2,x.a],[2,A.a]],null,null),(l()(),o._20(-1,1,["\n  "])),(l()(),o.Z(16,0,null,1,5,"ion-list",[],null,null,null,null,null)),o.Y(17,16384,null,0,I.a,[y.a,o.j,o.z,O.a,T.l,X.a],null,null),(l()(),o._20(-1,null,["\n    "])),(l()(),o.U(16777216,null,null,1,null,t)),o.Y(20,802816,null,0,U.i,[o.I,o.F,o.p],{ngForOf:[0,"ngForOf"]},null),(l()(),o._20(-1,null,["\n  "])),(l()(),o._20(-1,1,["\n"])),(l()(),o._20(-1,null,["\n"]))],function(l,n){l(n,20,0,n.component.players)},function(l,n){var u=n.component;l(n,4,0,o._11(n,5)._hidden,o._11(n,5)._sbPadding);l(n,9,0,u.teamName);l(n,13,0,o._11(n,14).statusbarPadding,o._11(n,14)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var o=u(2),s=(u(1),u(160),u(347)),e=u(168),i=function(){function l(l,n,u){this.navCtrl=l,this.navParams=n,this.service=u,this.teamurl=n.get("teamUrl"),this.teamName=n.get("teamName")}return l.prototype.ionViewDidLoad=function(){this.displayTeamsList(),console.log("ionViewDidLoad PlayersPage")},l.prototype.toHttps=function(l){return l.includes("https")||(l=l.replace("http","https")),console.log(l),l},l.prototype.displayTeamsList=function(){var l=this;this.service.getItems(this.toHttps(this.teamurl)).subscribe(function(n){l.players=n.players},function(l){if(!(l instanceof s.a))throw l;console.log("not found ")})},l}(),c=function(){return function(){}}(),r=u(338),_=u(339),b=u(340),d=u(341),p=u(342),f=u(343),m=u(344),g=u(345),h=u(346),k=u(348),v=u(27),Z=u(23),y=u(3),j=u(54),C=u(107),Y=u(163),x=u(7),z=u(643),P=u(51),q=u(12),A=u(30),$=u(644),L=u(161),N=u(73),w=u(645),F=u(32),O=u(6),X=u(13),B=u(48),I=u(74),T=u(11),U=u(25),V=u(16),D=o.X({encapsulation:2,styles:[],data:{}}),H=o.V("page-players",i,function(l){return o._22(0,[(l()(),o.Z(0,0,null,null,1,"page-players",[],null,null,null,a,D)),o.Y(1,49152,null,0,i,[A.a,V.a,e.a],null,null)],null,null)},{},{},[]),M=u(26),J=u(162),R=u(49);u.d(n,"PlayersPageModuleNgFactory",function(){return S});var S=o.W(c,[],function(l){return o._7([o._8(512,o.i,o.S,[[8,[r.a,_.a,b.a,d.a,p.a,f.a,m.a,g.a,h.a,H]],[3,o.i],o.s]),o._8(4608,U.l,U.k,[o.r,[2,U.t]]),o._8(4608,M.k,M.k,[]),o._8(4608,M.c,M.c,[]),o._8(512,U.b,U.b,[]),o._8(512,M.j,M.j,[]),o._8(512,M.d,M.d,[]),o._8(512,M.i,M.i,[]),o._8(512,J.a,J.a,[]),o._8(512,J.b,J.b,[]),o._8(512,c,c,[]),o._8(256,R.a,i,[])])})},643:function(l,n,u){"use strict";function t(l){return a._22(0,[(l()(),a.Z(0,0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),a.Y(1,278528,null,0,o.h,[a.p,a.q,a.j,a.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),a.Z(2,0,null,null,8,"button",[["class","back-button"],["ion-button","bar-button"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.backButtonClick(u)&&t}return t},s.b,s.a)),a.Y(3,278528,null,0,o.h,[a.p,a.q,a.j,a.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a.Y(4,1097728,null,0,e.a,[[8,"bar-button"],i.a,a.j,a.z],null,null),(l()(),a.Z(5,0,null,0,2,"ion-icon",[["class","back-button-icon"],["role","img"]],[[2,"hide",null]],null,null,null,null)),a.Y(6,278528,null,0,o.h,[a.p,a.q,a.j,a.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a.Y(7,147456,null,0,c.a,[i.a,a.j,a.z],{name:[0,"name"]},null),(l()(),a.Z(8,0,null,0,2,"span",[["class","back-button-text"]],null,null,null,null,null)),a.Y(9,278528,null,0,o.h,[a.p,a.q,a.j,a.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),(l()(),a._20(10,null,["",""])),a._10(null,0),a._10(null,1),a._10(null,2),(l()(),a.Z(14,0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),a.Y(15,278528,null,0,o.h,[a.p,a.q,a.j,a.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._10(null,3)],function(l,n){var u=n.component;l(n,1,0,"toolbar-background","toolbar-background-"+u._mode);l(n,3,0,"back-button","back-button-"+u._mode);l(n,6,0,"back-button-icon","back-button-icon-"+u._mode);l(n,7,0,u._bbIcon);l(n,9,0,"back-button-text","back-button-text-"+u._mode);l(n,15,0,"toolbar-content","toolbar-content-"+u._mode)},function(l,n){var u=n.component;l(n,2,0,u._hideBb);l(n,5,0,a._11(n,7)._hidden);l(n,10,0,u._backText)})}u.d(n,"a",function(){return r}),n.b=t;var a=u(2),o=u(25),s=u(53),e=u(28),i=u(3),c=u(52),r=(u(7),u(30),a.X({encapsulation:2,styles:[],data:{}}))},644:function(l,n,u){"use strict";function t(l){return a._22(2,[(l()(),a.Z(0,0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),a.Y(1,278528,null,0,o.h,[a.p,a.q,a.j,a.A],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),a._10(null,0)],function(l,n){l(n,1,0,"toolbar-title","toolbar-title-"+n.component._mode)},null)}u.d(n,"a",function(){return s}),n.b=t;var a=u(2),o=u(25),s=(u(3),a.X({encapsulation:2,styles:[],data:{}}))},645:function(l,n,u){"use strict";function t(l){return a._22(2,[a._18(402653184,1,{_fixedContent:0}),a._18(402653184,2,{_scrollContent:0}),(l()(),a.Z(2,0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),a._10(null,0),(l()(),a.Z(4,0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),a._10(null,1),a._10(null,2)],null,null)}u.d(n,"a",function(){return o}),n.b=t;var a=u(2),o=(u(3),u(6),u(13),u(48),u(7),u(30),a.X({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([3],{
+
+/***/ 680:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayersPageModule", function() { return PlayersPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__players__ = __webpack_require__(813);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var PlayersPageModule = /** @class */ (function () {
+    function PlayersPageModule() {
+    }
+    PlayersPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__players__["a" /* PlayersPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__players__["a" /* PlayersPage */]),
+            ],
+        })
+    ], PlayersPageModule);
+    return PlayersPageModule;
+}());
+
+//# sourceMappingURL=players.module.js.map
+
+/***/ }),
+
+/***/ 813:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlayersPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_common_not_found_error__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_common_service_players_service__ = __webpack_require__(347);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the PlayersPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PlayersPage = /** @class */ (function () {
+    function PlayersPage(navCtrl, navParams, service, loadingCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.service = service;
+        this.loadingCtrl = loadingCtrl;
+        this.teamurl = navParams.get('teamUrl');
+        this.teamName = navParams.get('teamName');
+    }
+    PlayersPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.loader = this.loadingCtrl.create({ content: 'Loading players...',
+            spinner: 'dots'
+        });
+        this.loader.present().then(function () {
+            _this.displayTeamsList();
+        });
+    };
+    PlayersPage.prototype.toHttps = function (val) {
+        if (!val.includes("https")) {
+            val = val.replace("http", "https");
+        }
+        console.log(val);
+        return val;
+    };
+    PlayersPage.prototype.displayTeamsList = function () {
+        var _this = this;
+        //console.log(this.teamurl);
+        this.service.getItems(this.toHttps(this.teamurl)).subscribe(function (response) {
+            _this.players = response.players;
+            _this.loader.dismiss();
+        }, function (error) {
+            if (error instanceof __WEBPACK_IMPORTED_MODULE_2__app_common_not_found_error__["a" /* NotFoundError */]) {
+                console.log('not found ');
+            }
+            else {
+                throw error;
+            }
+            _this.loader.dismiss();
+        });
+    };
+    PlayersPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-players',template:/*ion-inline-start:"/Users/prasad/Desktop/SoccerScores/SoccerScores/src/pages/players/players.html"*/'<!--\n  Generated template for the PlayersPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{teamName}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item *ngFor = "let player of players ">\n  \n      <!-- <ion-avatar item-start>\n        <ion-text-avatar color="primary">{{player.jerseyNumber}}</ion-text-avatar>\n      </ion-avatar> -->\n\n      <h1>{{player.name}}</h1>\n      <h3>{{player.position}}</h3>\n      <p>{{player.nationality}}</p>\n      <p>{{player.jerseyNumber}}</p>\n      <p>{{player.contractUntil}}</p>\n      <p>{{player.dateOfBirth}}</p>\n      \n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/prasad/Desktop/SoccerScores/SoccerScores/src/pages/players/players.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__app_common_service_players_service__["a" /* PlayersService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* LoadingController */]])
+    ], PlayersPage);
+    return PlayersPage;
+}());
+
+//# sourceMappingURL=players.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=3.js.map
