@@ -16,9 +16,9 @@
 <ion-content padding>
 
   <ion-item>
-    <ion-label>This week : </ion-label>
+    <ion-label>Filter (week) : </ion-label>
     <ion-toggle [(ngModel)]="useDateTimeFilter" (ionChange)="dateChanged()" ></ion-toggle>
-    <ion-datetime displayFormat="D/M/YYYY" pickerFormat="D/M/YYYY" [(ngModel)]="dateFilter"  (ionChange)="dateChanged()" [(disabled)]="!useDateTimeFilter" ></ion-datetime>
+    <ion-datetime placeholder="current week" displayFormat="D/M/YYYY" pickerFormat="D/M/YYYY" [(ngModel)]="dateFilter"  (ionChange)="dateChanged()" [(disabled)]="!useDateTimeFilter" ></ion-datetime>
   </ion-item>
 
     <ion-list>
